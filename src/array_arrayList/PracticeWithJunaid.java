@@ -1,8 +1,7 @@
 package array_arrayList;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
+import java.util.List;
 
 public class PracticeWithJunaid {
 static int [] selected={ 100,70,90,80,60,70,50,60,70,90,4,50,80,90,1,55};
@@ -96,13 +95,36 @@ public static  void hashMapInfo(int []traverse){
         System.out.println("The numerical number is :"+info.getKey()+": iterate is :"+info.getValue());
     }
 }
+//===============================================
+ List<Integer> winningNumber=new LinkedList<>();
+public static  void winningInfo(){
+    PracticeWithJunaid mega=new PracticeWithJunaid();
+    mega.winningNumber.add(43);
+    mega.winningNumber.add(56);
+    mega.winningNumber.add(57);
+    mega.winningNumber.add(70);
+
+    System.out.println(mega.winningNumber.get(2));
+    for (Integer lk: mega.winningNumber)  // DataType + objectName: MEGA ObjectName +Array
+          {
+              System.out.println(lk);
+    }
+
+}
+
+
+
     public static void main(String[] args) {
         PracticeWithJunaid key=new PracticeWithJunaid();
         key.minInfo(selected);
         key.smallestValue(kids);
         key.overAll();
         PracticeWithJunaid.hashMapInfo(members);
+        PracticeWithJunaid.winningInfo();
     }
+
+
+
 
 
 }

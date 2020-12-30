@@ -182,6 +182,11 @@ public class ListWithMap {
                 System.out.println(lotto[i]);
             }
 
+
+
+
+
+
         }
     }
 
