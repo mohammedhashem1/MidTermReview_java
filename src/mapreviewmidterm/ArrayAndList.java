@@ -10,6 +10,26 @@ public class ArrayAndList {
     List<String> country = new ArrayList<String>();
     List<String> profession = new ArrayList<String>();
     List<String> salary = new ArrayList<String>();
+//    ARRAYLIST
+//    The java ArrayList implements List Interface
+//    ArrayList always maintain insertion order of the elements
+//    ArrayList only stores value or element
+//    ArrayList can contain duplicate elements
+//    We can have any numbers of null elements in ArrayList
+//    ArrayList get() method always gives an O(1) performance
+
+         static List<Boolean> isTrue=new ArrayList<>();
+
+    public  static void booleanInfo(){
+     ArrayAndList.isTrue.add(false);
+     ArrayAndList.isTrue.add(true);
+     ArrayAndList.isTrue.add(true);
+     ArrayAndList.isTrue.add(true);
+     ArrayAndList.isTrue.add(true);
+     ArrayAndList.isTrue.add(true);
+     ArrayAndList.isTrue.add(true);
+        System.out.println(ArrayAndList.isTrue);
+    }
 
 
     public static void stInfo() {
@@ -64,6 +84,8 @@ public class ArrayAndList {
     }
 
     public static void main(String[] args) {
+        booleanInfo();
+
         int[] number = {10, 15, 20, 10, 50, 35, 55, 45, 25, 25, 7, 3, 1, 20, 30, 40, 20, 30, 40, 10, 20, 30, 30, 25, 35, 29, 45, 55, 50, 100, 75};
         methodInfo(number);
         ArrayAndList.stInfo();
@@ -127,18 +149,68 @@ public class ArrayAndList {
 
         obj2.removeAll(serial);
         System.out.println(obj2);
-        int [] roll={10,15,25,35,45,55,45,35,25,35,15,10,15,40,30,25,35,55,20,35,25,30,55,60,65 };
-        HashMap<Integer,Integer> best=new HashMap<>();
-        for(int i=0; i<roll.length;i++){
-           Integer result= best.get(roll[i]);
-           if((best.get(roll[i]))==null){
-               best.put(roll[i],1);
-           } else{
-               best.put(roll[i],++result);
-           }
+        int[] roll = {10, 15, 25, 35, 45, 55, 45, 35, 25, 35, 15, 10, 15, 40, 30, 25, 35, 55, 20, 35, 25, 30, 55, 60, 65};
+        HashMap<Integer, Integer> best = new HashMap<>();
+        for (int i = 0; i < roll.length; i++) {
+            Integer result = best.get(roll[i]);
+            if ((best.get(roll[i])) == null) {
+                best.put(roll[i], 1);
+            } else {
+                best.put(roll[i], ++result);
+            }
         }
-        for (Map.Entry<Integer,Integer> exam:best.entrySet()) {
-            System.out.println("The Number is :"+exam.getKey()+": Iteration is :"+exam.getValue());
+        for (Map.Entry<Integer, Integer> exam : best.entrySet()) {
+            System.out.println("The Number is :" + exam.getKey() + ": Iteration is :" + exam.getValue());
         }
+        int[] player = new int[10];
+        Random good = new Random(40);
+        for (int i = 0; i < player.length; i++) {
+            player[i] = good.nextInt(600);//Range 40-600;
+            System.out.println(player[i]);
+        }
+        System.out.println(Math.random());
+        System.out.println("*****************************************************");
+        ticketInfo();
+        System.out.println("******************************************");
+        ArrayAndList.randomInfo();
+    }
+
+    //===================================================================================
+    static int[] ticket = new int[15];
+    static Random select = new Random(60);
+
+    public static void ticketInfo() {
+        for (int c = 0; c < ticket.length; c++) {
+            ticket[c] = select.nextInt(700);
+            System.out.println(ticket[c]);
+        }
+        System.out.println(Math.random());
+        Queue<String> best = new ArrayDeque<>();
+
+        best.add("Pintu");
+        best.add("Saudi");
+        best.add("Madina");
+        best.add("pakistan");
+        best.add("Bangladesh");
+        System.out.println(best.poll());
+        System.out.println(best.poll());
+        System.out.println(best.poll());
+        System.out.println(best.poll());
+        //System.out.println(best.poll());
+        System.out.println(best.peek());
+        System.out.println(best.poll());
+    }
+
+    static int[] service = new int[10];
+    static Random patient = new Random(5);
+
+    public static void randomInfo() {
+
+        for (int b = 0; b < service.length; b++) {
+            service[b] = patient.nextInt(100);
+            System.out.println(service[b]);
+        }
+
+
     }
 }
