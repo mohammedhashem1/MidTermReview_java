@@ -4,6 +4,9 @@ public enum ReviewEnum {// Main Class Body
 
     APPLE,ORANGE,MANGO,GRAPES,MALTA; //Attributes : Constant : Final/static public cannot be change
 
+
+
+
     public static void main(String[] args) {
        ReviewEnum sweet= ReviewEnum.APPLE;
         System.out.println(sweet);
