@@ -29,7 +29,18 @@ public class StringConcept {
         System.out.println(poll.city.length());
         System.out.println(teacher.compareToIgnoreCase("mahmud bai "));
         System.out.println(teacher.toLowerCase());
-
+        System.out.println("******************************");
+        System.out.println(teacher.compareToIgnoreCase("mahmud"));
+        System.out.println(teacher.equals("mahmad"));
+        System.out.println(teacher.equalsIgnoreCase("mahmud"));
+        System.out.println(teacher.charAt(3));
+        System.out.println(teacher.concat(""+ " Chowdury"));
+        System.out.println(teacher.contains("Mahmud"));
+        System.out.println(teacher.substring(1,4));
+        System.out.println(poll.city.substring(2));
+        System.out.println(poll.city.trim());
+        System.out.println(poll.city.compareTo("Manhattan, NewYork"));
     }
+
 
 }

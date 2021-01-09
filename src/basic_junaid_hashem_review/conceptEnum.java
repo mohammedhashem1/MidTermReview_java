@@ -29,7 +29,6 @@ public enum conceptEnum {
            System.out.println(good);
            System.out.println("The choicest color is :"+colorInfo.PINK);
            System.out.println(best);
-
        }
 
     }
