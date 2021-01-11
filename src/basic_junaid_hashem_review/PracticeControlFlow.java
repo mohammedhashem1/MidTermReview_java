@@ -1,6 +1,31 @@
 package basic_junaid_hashem_review;
 
 public class PracticeControlFlow {
+    /**
+     * Do While loop is post conditional check , first it will execute one time  then it will check condition
+     * then if the condition is true then it will execute the statement or group of statement according
+     * to conditional order , Means multiple times.
+     * System.out.println(" Welcome to USA");    Assume Nested looping is the Parent an Child  Conditional statement , Looping
+     * or iterating again again as long
+     * condition is true , when  java start executing the coding  inside the parent Statement
+     * as long it is true ,With in the parent's statement body first execute parent code immediately
+     * one time if TRUE
+     * then No matter what
+     * jump to child statement as long as condition of child statement is true it will
+     * continuously iterate, when False then exit from parent Statement
+     * and start looping from parent statement , Start doing the execution as long Parent and
+     * child condition is true
+     * /**
+     * * While loop is the pre Conditional loop
+     * * while loop is used when we don't know how many times iterating or looping again and again
+     * * while loop needs to be executed beforehand / means in advance
+     * * Typically an Index are using when iteration or looping
+     * * The Java do-while loop is used to iterate a part of the program several times.
+     * * If the number of iteration is not fixed and you must have to execute the loop at least once,
+     * * it is recommended to use do-while loop. The Java do-while loop is executed at least once
+     * * because condition is checked after loop body.
+     */
+
 
     public static void main(String[] args) {
         int student = 50;
@@ -122,6 +147,12 @@ public void NestedIfElse() {
         }
     }else{
         System.out.println("Apple price is not affordable");
+    }
+
+   int num1=60;
+    int num2=40;
+    if (num1==num2|| num1>num2 || num2<=num1){
+        System.out.println("What a country USA");
     }
 
 }
